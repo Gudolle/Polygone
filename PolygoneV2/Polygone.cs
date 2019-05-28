@@ -11,7 +11,7 @@ namespace PolygoneV2
     class Polygone
     {
 
-        public readonly static Color Green = Color.FromRgb(0, 200, 0);
+        public readonly static Color Green = Color.FromRgb(33, 200, 33);
         public readonly static Color Red = Color.FromRgb(200, 33, 33);
         public readonly static Color Orange = Color.FromRgb(255,165,0);
 

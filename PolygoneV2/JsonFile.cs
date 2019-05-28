@@ -14,7 +14,7 @@ namespace PolygoneV2
         public static List<Polygone> RecupereList()
         {
             string Contenue = File.ReadAllText(JsonUri).Replace('\'', ' ');
-            return JsonConvert.DeserializeObject<List<Polygone>>(Contenue);
+            return String.IsNullOrEmpty(Contenue) ? new List<Polygone>() : JsonConvert.DeserializeObject<List<Polygone>>(Contenue);
         }
         public static void EcrisFile()
         {
